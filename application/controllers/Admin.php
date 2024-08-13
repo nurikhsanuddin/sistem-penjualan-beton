@@ -99,7 +99,7 @@ class Admin extends CI_Controller
 			'status_order' => '1'
 		);
 		$this->m_pesanan_masuk->update_order($data);
-		$this->session->set_flashdata('pesan', 'Pesanan Berhasil Di Proses/Dikemas !!!');
+		$this->session->set_flashdata('pesan', 'Pesanan Berhasil Diproses/Dikemas !!!');
 		redirect('admin/pesanan_masuk');
 	}
 
