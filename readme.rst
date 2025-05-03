@@ -1,89 +1,53 @@
-###################
-About APP
+# 🧱 Sistem Penjualan Beton - CodeIgniter 3
 
-Aplikasi E-commerce ini dibuat menggunakan CodeIgniter3,silahkan di clone dan dikembangkan dengan bebas.
-- Dua Role User (Admin) & (SuperAdmin)
-- Login & Register Pelanggan
-- Checkout barang
-- Terintegrasi API RajaOngkir, ongkir sesuai jarak.
-dan masih banyak lagi fitur yang tersedia..silahkan dicoba dan jangan lupa di kasih bintang guys.
-###################
+Sistem ini merupakan aplikasi berbasis web untuk mengelola penjualan beton. Dibangun menggunakan **CodeIgniter 3**, sistem ini mendukung pengelolaan pelanggan, produk beton, transaksi penjualan, dan laporan.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+---
 
-###################
-What is CodeIgniter
-###################
+## 🚀 Fitur Utama
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+- Manajemen data pelanggan
+- Manajemen produk beton
+- Pencatatan transaksi penjualan
+- Pencetakan nota / faktur
+- Laporan penjualan berdasarkan tanggal
+- Autentikasi pengguna (login/logout)
+- Role pengguna (admin dan kasir)
 
-*******************
-Release Information
-*******************
+---
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## 🛠️ Teknologi
 
-**************************
-Changelog and New Features
-**************************
+- PHP 7.x
+- CodeIgniter 3.x
+- MySQL / MariaDB
+- jQuery & AJAX
+- Bootstrap 4 (atau sesuaikan)
+- AdminLTE / Template dashboard lainnya
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+---
 
-*******************
-Server Requirements
-*******************
+## 📦 Instalasi
 
-PHP version 5.6 or newer is recommended.
+### 1. Clone Repository
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+```bash
+git clone https://github.com/username/sistem-penjualan-beton.git
+cd sistem-penjualan-beton
 
-************
-Installation
-************
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+Duplikat file application/config/config.php, database.php, dan autoload.php jika belum ada.
+Ubah pengaturan dasar berikut:
 
-*******
-License
-*******
+// application/config/config.php
+$config['base_url'] = 'http://localhost/sistem-penjualan-beton/';
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+// application/config/database.php
+$db['default'] = array(
+  'hostname' => 'localhost',
+  'username' => 'root',
+  'password' => '',
+  'database' => 'penjualan_beton',
+  'dbdriver' => 'mysqli',
+  ...
+);
